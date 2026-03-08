@@ -336,7 +336,7 @@
     <button class="refresh-btn" onclick="refreshData()">🔄 重新整理</button>
     
     <footer>
-        <p>OpenClaw AI Token Dashboard | 自動更新間隔：30秒</p>
+        <p>OpenClaw AI Token Dashboard | 點擊右下角按鈕手動更新</p>
     </footer>
     
     <script>
@@ -393,11 +393,7 @@
             console.log('儀表板已更新');
         }
         
-        // 頁面載入時自動更新
-        window.addEventListener('load', refreshData);
-        
-        // 每 30 秒自動更新
-        setInterval(refreshData, 30000);
+        // 頁面載入時更新（手動點擊按鈕更新）
     </script>
 </body>
 </html>
